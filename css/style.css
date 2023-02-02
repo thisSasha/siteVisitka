@@ -36,7 +36,9 @@ h2{
     background-color: white;
     width: 50%;
 }
-
+.text_c92e {
+    color: black;
+}
 @media (orientation: portrait) {
     .container {
         width: 100%;
