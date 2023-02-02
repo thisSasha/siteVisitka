@@ -1,0 +1,11 @@
+:root{
+    --nav-bg-color: rgb(34, 34, 34);
+    --nav-color: white;
+    --element-hover: rgb(40, 40, 40);
+}
+.nav{
+    position: fixed;
+    background-color: var(--nav-bg-color);
+    width: 100%;
+    z-index: 10;
+}
