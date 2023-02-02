@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;600&display=swap');
+.icon {
+    width: 4vw;
+}
+*{
+    font-family: sans-serif;
+    font-weight: 400;
+}
+body {
+    display: flex;
+    justify-content: center;
+    background-color: #BE8562;
+}
+h1{
+    margin-bottom: 2%;
+    font-size: 2.2em;
+    font-family: 'Alegrya';
+    font-weight: 600;
+}
+h2{
+    font-size: 1.7em;
+    font-family: 'Alegrya';
+    font-weight: 500;
+}
+.soc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+.container {
+    text-align: center;
+    padding: 2%;
+    margin-top: 0.7vh;
+    border-radius: 2.5%;
+    background-color: white;
+    width: 50%;
+}
+
+@media (orientation: portrait) {
+    .container {
+        width: 100%;
+        background-color: #BE8562;
+    }
+}
