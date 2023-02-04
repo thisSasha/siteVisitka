@@ -2,6 +2,8 @@
 <html lang='ru'>
 
 <head>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <link rel='stylesheet' href='./css/zero.css'>
@@ -36,6 +38,7 @@
             <div class="swiper-slide"><img src="./res/imgs/about/6.png" alt=""></div>
         </div>
     </div>
+    <div class="popupVideo"><video src="./res/aboutMe.mp4" controls></video></div>
     <div class="container">
         <header>
             <div class="avatar">
@@ -44,6 +47,7 @@
             <h1>Aromaltis <br> Состав "Нежные пяточки"</h1>
         </header>
         <div class="about" id="about">
+            <button class="popupOpen" id="aboutMe">Обо мне</button>
             <button class="popupOpen" id="aboutProduct">О продукте</button>
         </div>
         <div class="albom">
@@ -57,7 +61,7 @@
             <a href="" class="soc"><img src="./res/imgs/insta.png" alt="" class="icon">Инстаграм</a>
         </div>
         <footer></footer>
-    </div>  
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script type="module">
         import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js'
@@ -85,6 +89,9 @@
             } else if (e.target.id == 'aboutProduct') {
                 swiper.el.style.display = 'flex';
                 openedSwiper = true;
+            } else if (e.target.id == 'aboutMe') {
+                document.querySelector('video').play();
+                document.querySelector('.popupVideo').style.display = 'flex';
             };
         };
         document.querySelectorAll('img').forEach(el => {

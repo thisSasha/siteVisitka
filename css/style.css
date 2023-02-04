@@ -83,13 +83,30 @@ h2 {
 
 button.popupOpen {
     background-color: #cb9878;
+    margin-bottom: 1.2vh;
     border-radius: 2vh;
     color: black;
     width: 80%;
     height: 8vh;
     font-size: 2em;
 }
-
+.popupVideo{
+    background-color: #00000074;
+    z-index: 5;
+    height: 85%;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+.popupVideo video{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
 @media (orientation: portrait) {
     .container {
         width: 100%;
