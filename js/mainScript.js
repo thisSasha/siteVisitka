@@ -4,10 +4,5 @@ setInterval(() => {
     };
 }, 5000);
 
-onclick = function(e) {
-    if(e.target.classList.contains('swiper-slide')){
-        document.querySelector('.swiper').style.display = 'none';
-    } else if(e.target.id=='aboutProduct'){
-        document.querySelector('.swiper').style.display = 'flex';
-    };
-};
+
+document.body.style.fontSize = document.body.offsetWidth/102.2+'px';
